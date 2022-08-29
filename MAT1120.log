@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.5)  29 AUG 2022 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.2.5)  29 AUG 2022 10:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -860,20 +860,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of 
 ) (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/babel-norsk\norsk.ldf
 Language: norsk 2012/08/06 v2.0i Norsk support from the babel system
 Package babel Info: Making " an active character on input line 113.
-)) (MAT1120.aux
-
-LaTeX Warning: Label `fig:figure1' multiply defined.
-
-
-LaTeX Warning: Label `fig:figure1@cref' multiply defined.
-
-
-LaTeX Warning: Label `fig:figure1' multiply defined.
-
-
-LaTeX Warning: Label `fig:figure1@cref' multiply defined.
-
-)
+)) (MAT1120.aux)
 \openout1 = `MAT1120.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -979,7 +966,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
- (MAT1120.out) (MAT1120.out)
 \@outlinefile=\write4
 \openout4 = `MAT1120.out'.
 
@@ -1010,8 +996,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--48
 
 (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-33.def
 File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-) [2]
-<Bilder/HK_intersect.png, id=50, 390.258pt x 233.07076pt>
+)
+
+LaTeX Warning: Reference `Theorem 1' on page 1 undefined on input line 85.
+
+[2]
+<Bilder/HK_intersect.png, id=46, 390.258pt x 233.07076pt>
 File: Bilder/HK_intersect.png Graphic file (type png)
 <use Bilder/HK_intersect.png>
 Package pdftex.def Info: Bilder/HK_intersect.png  used on input line 92.
@@ -1026,53 +1016,110 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--97
 
  []
 
-<Bilder/Exercise_44_matlab.png, id=53, 278.2395pt x 90.3375pt>
+<Bilder/Exercise_44_matlab.png, id=48, 278.2395pt x 90.3375pt>
 File: Bilder/Exercise_44_matlab.png Graphic file (type png)
 <use Bilder/Exercise_44_matlab.png>
-Package pdftex.def Info: Bilder/Exercise_44_matlab.png  used on input line 121.
+Package pdftex.def Info: Bilder/Exercise_44_matlab.png  used on input line 122.
 (pdftex.def)             Requested size: 194.76631pt x 63.23581pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--126
+Underfull \hbox (badness 10000) in paragraph at lines 117--127
 
  []
 
 [3 <./Bilder/HK_intersect.png>] (C:\Users\oskar\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<Bilder/nullspace_figure.png, id=62, 338.4645pt x 163.20975pt>
+<Bilder/nullspace_figure.png, id=57, 338.4645pt x 163.20975pt>
 File: Bilder/nullspace_figure.png Graphic file (type png)
 <use Bilder/nullspace_figure.png>
-Package pdftex.def Info: Bilder/nullspace_figure.png  used on input line 140.
+Package pdftex.def Info: Bilder/nullspace_figure.png  used on input line 141.
 (pdftex.def)             Requested size: 236.92352pt x 114.24603pt.
  [4 <./Bilder/Exercise_44_matlab.png> <./Bilder/nullspace_figure.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--233
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
 
  []
+
+04Vector_Spaces_MAT1120.tex:238: Missing $ inserted.
+<inserted text> 
+                $
+l.238 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+04Vector_Spaces_MAT1120.tex:238: Display math should end with $$.
+<to be read again> 
+                   \tex_par:D 
+l.238 
+      
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+04Vector_Spaces_MAT1120.tex:239: LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239       \]
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+04Vector_Spaces_MAT1120.tex:239: Missing $ inserted.
+<inserted text> 
+                $
+l.239       \]
+              
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+04Vector_Spaces_MAT1120.tex:239: Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.239       \]
+              
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
 
 ) [5] (MAT1120.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `MAT1120.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `MAT1120.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `MAT1120.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 43243 strings out of 478593
- 972546 string characters out of 2844605
- 1440027 words of memory out of 3000000
+ 43239 strings out of 478593
+ 972388 string characters out of 2844605
+ 1439299 words of memory out of 3000000
  60667 multiletter control sequences out of 15000+600000
  478824 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,9n,94p,787b,630s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\oskar\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/oskar/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MAT1120.pdf (5 pages, 221495 bytes).
+Output written on MAT1120.pdf (5 pages, 221520 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 145 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

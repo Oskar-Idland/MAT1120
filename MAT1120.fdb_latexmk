@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1661758653 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/MAT1120/MAT1120.tex" "MAT1120.pdf" "MAT1120" 1661758665
-  "04Vector_Spaces_MAT1120.tex" 1661758651 9225 64ad8ba4973450f2c3d2220fa93bcf2b ""
+["pdflatex"] 1661761847 "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/MAT1120/MAT1120.tex" "MAT1120.pdf" "MAT1120" 1661761847
+  "04Vector_Spaces_MAT1120.tex" 1661761826 9469 c2150096d22be8e57b4352fa0cce63fe ""
   "Bilder/Exercise_44_matlab.png" 1661699779 4115 3235513cabb9db8057c82ef86b025236 ""
   "Bilder/HK_intersect.png" 1661696736 46339 b517c0b2cd2f4272531eb2663bd7542e ""
   "Bilder/nullspace_figure.png" 1661710230 23365 f19d13a24f26167cba4cc3a87c511c70 ""
@@ -273,8 +273,8 @@
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1602241898 2275 d29aca6fd67823551cb07584e3681d5d ""
   "C:/Users/oskar/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1602241898 20688 beaddf14d96104d4bf016523be5395c5 ""
-  "MAT1120.aux" 1661758664 2803 7ee102f4fc39c5b3ee220809306405de "pdflatex"
-  "MAT1120.out" 1661758663 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "MAT1120.aux" 1661761847 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "MAT1120.out" 0 -1 0 "pdflatex"
   "MAT1120.tex" 1661697359 2307 4c6536fa0b7dda630e6f197cd87ee205 ""
   "c:/Users/oskar/OneDrive/Dokumenter/GitHub/Privat/MAT1120/MAT1120.tex" 1661697359 2307 4c6536fa0b7dda630e6f197cd87ee205 ""
   (generated)
