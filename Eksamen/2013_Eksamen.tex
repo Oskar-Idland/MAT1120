@@ -1,0 +1,275 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[margin=1.5in]{geometry}
+\usepackage{enumerate}
+\newtheorem{theorem}{Theorem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pgfplots}
+\setlength{\parindent}{0cm}
+\usepackage{graphics}
+\usepackage{graphicx} % Required for including images
+\usepackage{subcaption}
+\usepackage{bigintcalc}
+\usepackage{pythonhighlight} %for pythonkode \begin{python}   \end{python}
+\usepackage{appendix}
+\usepackage{arydshln}
+\usepackage{physics}
+\usepackage{tikz-cd}
+\usepackage{booktabs} 
+\usepackage{adjustbox}
+\usepackage{mdframed}
+\usepackage{relsize}
+\usepackage{physics}
+\usepackage[thinc]{esdiff}
+\usepackage{fixltx2e}
+\usepackage{esint}  %for lukket-linje-integral
+\usepackage{xfrac} %for sfrac
+\usepackage{hyperref} %for linker, må ha med hypersetup
+\usepackage[noabbrev, nameinlink]{cleveref} % to be loaded after hyperref
+\usepackage{amssymb} %\mathbb{R} for reelle tall, \mathcal{B} for "matte"-font
+\usepackage{listings} %for kode/lstlisting
+\usepackage{verbatim}
+\usepackage{graphicx,wrapfig,lipsum,caption} %for wrapping av bilder
+\usepackage{mathtools} %for \abs{x}
+\usepackage[norsk]{babel}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+\author{Oskar Idland}
+\title{MAT1120 Eksamen 2013}
+\date{}
+\begin{document}
+\maketitle
+\newpage
+
+\section*{Oppgave 1}
+\subsection*{a)}
+
+\[
+A = 
+\begin{pmatrix}
+ 1 & 1 & 0 & 2 \\
+ 1 & -1 & 1 & 1 \\
+ 1 & 0 & 0 & 1 \\
+ 0 & 1 & 1 & 2 \\
+\end{pmatrix} \xrightarrow{rref}
+
+\quad
+
+C  =  \operatorname{rref}(A) =
+\begin{pmatrix*}[r]
+ 1 & 0 & 0 & 1 \\
+ 0 & 1 & 0 & 1 \\
+ 0 & 0 & 1 & 1 \\
+ 0 & 0 & 0 & 0 \\
+\end{pmatrix*}
+\]
+
+From C we know that only the three first columns in $A$ are linearly independent which means its rank is 3. The Null space must therefore be 1-dimensional. To find the basis for the null space we can use the following equation:
+\[
+A \mathbf{x} = \mathbf 0
+\]
+With the help of matrix $C$ we can solve this equation easily
+\[
+\begin{pmatrix*}[r]
+ 1 & 0 & 0 & 1 \\
+ 0 & 1 & 0 & 1 \\
+ 0 & 0 & 1 & 1 \\
+ 0 & 0 & 0 & 0 \\
+\end{pmatrix*}
+\begin{pmatrix*}[r]
+ x_1 \\
+ x_2 \\
+ x_3 \\
+ x_4 \\
+\end{pmatrix*} = 
+\begin{pmatrix*}[r]
+ 0 \\
+ 0 \\
+ 0 \\
+ 0 \\
+\end{pmatrix*} = 
+x_4 
+\begin{pmatrix*}[r]
+ -1 \\
+ -1 \\
+ -1 \\
+ 1 \\
+\end{pmatrix*}
+\]
+The basis of the Null space is therefore 
+\[
+\left\{ 
+    \begin{pmatrix*}[r]
+    1 \\
+    1 \\
+    1 \\
+    0 \\
+    \end{pmatrix*} 
+\right\} 
+\]
+
+\subsection*{b)}
+To find and orthogonal basis of the Column space we can use the Gram-Schmidt process. We start by finding the first vector in the basis. This is the first column in $A$ which is
+\[
+\mathbf{v_1} = \mathbf{x_1} = 
+\begin{pmatrix*}[r]
+    1 \\
+    1 \\
+    1 \\
+    0 \\
+\end{pmatrix*}
+\]
+
+\[
+\mathbf{v_2} = \mathbf{x_2} - \operatorname{proj}_{\mathbf{x_2}}(\mathbf{v_1}) = \mathbf{x_2} - \frac{\mathbf{x_2} \cdot \mathbf{v_1}}{\mathbf{v_1}, \mathbf{v_1}} \mathbf{v_1} = \mathbf{x_2} - \frac{0}{3}\mathbf{v_1} = \mathbf{x_2} = \begin{pmatrix*}[r]
+ 1 \\
+ -1 \\
+ 0 \\
+ 1 \\
+\end{pmatrix*}
+\]
+\[
+\mathbf{v_3} = \mathbf{x_3} - \operatorname{proj}_{\mathbf{x_3}}(\mathbf{v_1}) - \operatorname{proj}_{\mathbf{x_3}}(\mathbf{v_2}) = \mathbf{x_3} - \frac{\mathbf{x_3} \cdot \mathbf{v_1}}{\mathbf{v_1} \cdot \mathbf{v_1}} \mathbf{v_1} - \frac{\mathbf{x_3} \cdot \mathbf{v_2}}{\mathbf{v_2} \cdot \mathbf{v_2}} \mathbf{v_2} = \mathbf{x_3} - \frac{1}{3}\begin{pmatrix*}[r]
+ 1 \\
+ 1 \\
+ 1 \\
+ 0 \\
+\end{pmatrix*}  - 
+\frac{0}{3} \begin{pmatrix*}[r]
+ 1 \\
+ -1 \\
+ 0 \\
+ 1 \\
+\end{pmatrix*}
+\]
+\[
+\mathbf{v_3} = \begin{pmatrix*}[r]
+ 0 \\
+ 1 \\
+ 0 \\
+ 1 \\
+\end{pmatrix*} - 
+\frac{1}{3}
+\begin{pmatrix*}[r]
+ 1 \\
+ 1 \\
+ 1 \\
+ 0 \\
+\end{pmatrix*} = 
+\begin{pmatrix*}[r]
+ -\frac{1}{3} \\
+ \frac{2}{3} \\
+ -\frac{1}{3} \\
+ 1 \\
+\end{pmatrix*}
+\]
+\[
+\mathbf{v_3}' = 3\mathbf{v_3} = 
+\begin{pmatrix*}[r]
+ -1 \\
+ 2 \\
+ -1 \\
+ 3 \\
+\end{pmatrix*}
+\]
+
+\[
+\mathbf{v_4} = \mathbf{x_4} - \operatorname{proj}_{\mathbf{x_4}}(\mathbf{v_1}) - \operatorname{proj}_{\mathbf{x_4}}(\mathbf{v_2}) - \operatorname{proj}_{\mathbf{x_4}}(\mathbf{v_3}')  
+\]
+\[
+\mathbf{v_4} = \mathbf{x_4} - \frac{\mathbf{x_4} \cdot \mathbf{v_1}}{\mathbf{v_1} \cdot \mathbf{v_1}} \mathbf{v_1} - \frac{\mathbf{x_4} \cdot \mathbf{v_2}}{\mathbf{v_2} \cdot \mathbf{v_2}} \mathbf{v_2} - \frac{\mathbf{x_4} \cdot \mathbf{v_3}'}{\mathbf{v_3}' \cdot \mathbf{v_3}'} \mathbf{v_3}' 
+\]
+
+\[
+\mathbf{v_4} = \mathbf{x_4} - \frac{4}{3}\begin{pmatrix*}[r]
+ 1 \\
+ 1 \\
+ 1 \\
+ 0 \\
+\end{pmatrix*} - 
+\frac{3}{3}\begin{pmatrix*}[r]
+ 1 \\
+ -1 \\
+ 0 \\
+ 1 \\
+\end{pmatrix*} -
+\frac{5}{15}\begin{pmatrix*}[r]
+ -1 \\
+ 2 \\
+ -1 \\
+ 3 \\
+\end{pmatrix*}
+\]
+
+\[
+\mathbf{v_4} = \mathbf{x_4} - \frac{1}{3}\begin{pmatrix*}[r]
+ -4 - 1 + 1 \\
+ -4 + 1 - 2 \\
+ -4 + 0 + 1 \\
+ 0 - 1 - 3 \\
+\end{pmatrix*} = 
+\begin{pmatrix*}[r]
+ 2 \\
+ 1 \\
+ 1 \\
+ 2 \\
+\end{pmatrix*}
+ - \frac{1}{3}
+ \begin{pmatrix*}[r]
+  -4 \\
+  -5 \\
+  -3 \\
+  -3 \\
+ \end{pmatrix*}
+\]
+
+\[
+\mathbf{v_4} = 
+\frac{1}{3}
+\begin{pmatrix*}[r]
+ 6 + 4 \\
+ 3 + 5  \\
+ 3 + 3 \\
+ 6 + 3 \\
+\end{pmatrix*}
+\]
+
+\[
+\mathbf{v_4} = \frac{1}{3}
+\begin{pmatrix*}[r]
+ 10 \\
+ 8 \\
+ 5 \\
+ 9 \\
+\end{pmatrix*}
+\]
+
+
+
+
+\end{document}
